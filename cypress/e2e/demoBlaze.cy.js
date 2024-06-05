@@ -93,9 +93,9 @@ describe("Automated test scenarios for the sign up and log in functionalities.",
 
   it("Tests the log in function.", () => {
     cy.get("#navbarExample").contains("Log in").click().wait(1000);
-    cy.get("#loginusername").type("FlorinBocse");
-    cy.get("#loginpassword").type("pass1234");
+    cy.get("#loginusername").type("admin");
+    cy.get("#loginpassword").type("admin");
     cy.get(".modal-footer").contains("Log in").click().wait(1000);
-    cy.get("#navbarExample").should("contain","Welcome FlorinBocse");
+    cy.get("#navbarExample").should("contain","Welcome admin");
   });
 });

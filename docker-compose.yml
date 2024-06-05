@@ -5,4 +5,3 @@ services:
       - .:/app
     environment:
       - CYPRESS_baseUrl=https://www.demoblaze.com
-    platform: linux/arm64
